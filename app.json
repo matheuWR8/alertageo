@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "AlertaGeo",
+    "slug": "alertageo",
+    "version": "3.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "android": {
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "VIBRATE",
+        "POST_NOTIFICATIONS"
+      ],
+      "package": "com.alertageo.app"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "O AlertaGeo precisa da sua localização para alertar quando você chegar perto do seu destino."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "sounds": []
+        }
+      ]
+    ]
+  }
+}
